@@ -1,0 +1,1 @@
+ReactDOMRe.renderToElementWithId(<Main greeting="hello" />, "quiz-cont");

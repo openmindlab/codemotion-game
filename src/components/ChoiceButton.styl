@@ -1,0 +1,46 @@
+@import "../styl/main.styl"
+
+.choice-button
+  width         100%
+  padding       size-xl
+  min-height    150px
+  min-width     350px
+  background    color-white
+  border        none
+  border-radius size-xs
+  font-size     size-l
+
+  &.red
+    box-shadow 0px 0px 40px rgba(222, 114, 125, 0.45)
+
+  &.green
+    box-shadow 0px 0px 40px rgba(36, 236, 179, 0.45)
+
+  &.yellow
+    box-shadow 0px 0px 40px rgba(255, 205, 27, 0.45)
+
+  &.blue
+    box-shadow 0px 0px 40px rgba(12, 134, 255, 0.45)
+
+  .button-circle
+    position      absolute
+    width         size-xxl + 5
+    height        size-xxl + 5
+    border-radius 100%
+    transform     translate(150px, 32px)
+
+    &.red
+      background color-pink
+      box-shadow 0px 0px 30px color-pink
+
+    &.green
+      background color-green
+      box-shadow 0px 0px 30px color-green
+    
+    &.blue
+      background color-blue
+      box-shadow 0px 0px 30px color-blue
+    
+    &.yellow
+      background  color-yellow
+      box-shadow 0px 0px 30px color-yellow
