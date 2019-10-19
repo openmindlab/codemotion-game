@@ -8,8 +8,12 @@ FLG -nostdlib -color always
 FLG -w -30-40+6+7+27+32..39+44+45+101
 S /Users/micheleriva/work/Openmind/codemotion-quiz-reason/node_modules/reason-react/lib/ocaml
 B /Users/micheleriva/work/Openmind/codemotion-quiz-reason/node_modules/reason-react/lib/ocaml
+S /Users/micheleriva/work/Openmind/codemotion-quiz-reason/node_modules/@glennsl/bs-json/lib/ocaml
+B /Users/micheleriva/work/Openmind/codemotion-quiz-reason/node_modules/@glennsl/bs-json/lib/ocaml
 S src
 B lib/bs/src
+S src/questions
+B lib/bs/src/questions
 S src/components
 B lib/bs/src/components
 ####BSB GENERATED: NO EDIT}
