@@ -1,7 +1,13 @@
 [%bs.raw {|require("./ChoiceButton.styl")|}];
 
 [@react.component]
-let make = (~text: string, ~num: int, ~choose) => {
+let make = (
+  ~text: string,
+  ~num: int,
+  ~choose,
+  ~isRightChoice: bool,
+  ~showResult: bool
+  ) => {
 
   let color: string = switch num {
     | 1 => "green"
@@ -11,12 +17,16 @@ let make = (~text: string, ~num: int, ~choose) => {
     | _ => "grey"
   };
 
+  let finalColor          = isRightChoice ? "green" : "red";
+  let finalBtnCssClass    = showResult ? "allover-" ++ finalColor : color;
+  let finalCircleCssClass = showResult ? "hide" : color;
+
   <button 
-    className={"choice-button " ++ color}
+    className={"choice-button " ++ finalBtnCssClass }
     onClick={(_event) => choose(num)}
   >
     { ReasonReact.string(text) }
-    <div className={"button-circle " ++ color}> </div>
+    <div className={"button-circle " ++ finalCircleCssClass}> </div>
   </button>
 
 }

@@ -1,3 +1,4 @@
+/* Random seed */
 Random.init(int_of_float(Js.Date.now()));
 
 let data = {|
@@ -12,6 +13,7 @@ type questionsJson = {
 };
 
 module Decode = {
+
   let question = json =>
     Json.Decode.{
       question:   json |> field("question",   string),
@@ -20,8 +22,8 @@ module Decode = {
       difficulty: json |> field("difficulty", int)
     };
 
-  let all =
-    Json.Decode.array(question);
+  let all = Json.Decode.array(question);
+
 };
 
 let decodedQuestions: array(questionsJson) =
