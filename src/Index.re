@@ -1,1 +1,1 @@
-ReactDOMRe.renderToElementWithId(<Main greeting="hello" />, "quiz-cont");
+ReactDOMRe.renderToElementWithId(<Main greeting="hello" />, "main-cont");

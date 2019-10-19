@@ -1,28 +1,24 @@
 [%bs.raw {|require('./Main.styl')|}];
 
-/* State declaration */
 type state = {
-  count: int,
-  show: bool,
+  error:   bool,
+  choosen: int,
 };
 
-/* Action declaration */
 type action =
-  | Click
-  | Toggle;
+  | Choice;
 
-/* Reason-React component */
+let isRightChoice = (choice: int) => choice == 1;
+
 [@react.component]
 let make = (~greeting) => {
+
   let (state, dispatch) = React.useReducer((state, action) =>
   switch (action) {
-  | Click => {...state, count: state.count + 1}
-  | Toggle => {...state, show: ! state.show}
-  }, {count: 0, show: true});
+  | Choice => { ...state, error: false, choosen: 1 }
+  }, { choosen: 0, error: false});
 
-  let message =
-    "You've clicked this " ++ string_of_int(state.count) ++ " times(s)";
-  <div className="main-cont">
+  <div>
 
     <QuestionTitle text="In mathematics and computer science, what is a Monad?" />
     <DifficultyBadge level={3} />
@@ -34,12 +30,5 @@ let make = (~greeting) => {
       <ChoiceButton num={4} text="A special Java class with hidden state and a lot of side-effects"  />
     </div>
 
-    <button onClick={_event => dispatch(Click)}>
-      {ReasonReact.string(message)}
-    </button>
-    <button onClick={_event => dispatch(Toggle)}>
-      {ReasonReact.string("Toggle greeting")}
-    </button>
-    {state.show ? ReasonReact.string(greeting) : ReasonReact.null}
   </div>;
 };

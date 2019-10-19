@@ -13,6 +13,7 @@ let make = (~text: string, ~num: int) => {
 
   <button className={"choice-button " ++ color}>
     { ReasonReact.string(text) }
+    <div className={"button-circle " ++ color}> </div>
   </button>
 
 }
