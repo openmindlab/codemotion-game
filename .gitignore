@@ -8,6 +8,7 @@
 
 *.bs.js
 build
+.merlin
 
 # User-specific stuff
 .idea/**/workspace.xml

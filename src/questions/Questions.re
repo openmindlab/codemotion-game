@@ -22,7 +22,9 @@ module Decode = {
       difficulty: json |> field("difficulty", int)
     };
 
-  let all = Json.Decode.array(question);
+  let all =
+    question 
+    |> Json.Decode.array;
 
 };
 
@@ -32,4 +34,8 @@ let decodedQuestions: array(questionsJson) =
   |> Decode.all;
 
 let getRandomQuestion =
-  decodedQuestions[Array.length(decodedQuestions) |> Random.int];
+  decodedQuestions[
+    decodedQuestions 
+    |> Array.length 
+    |> Random.int
+  ];

@@ -15,23 +15,22 @@ and choice = {
 };
 
 type action =
-  | Choose
+  | ChooseAnswer(int)
   | SetQuestion;
 
-let firstRandomQuestion = Questions.getRandomQuestion;
+let resetState = () => {
 
-let initialState = {
-  hasChosen:  false,
-  choosen:    0,
-  difficulty: 3,
-  question:   "What is a monad?",
-  choices: [
-    { number: 1, text: "It's just a monoid in the cathegory of endofunctors" },
-    { number: 2, text: "A pretty name for flatMap" },
-    { number: 3, text: "I actually have no idea what you're talking about!" },
-    { number: 4, text: "A special Java class with hidden state and a lot of side-effects" },
-  ],
-  correctChoice: 1
+  let randomQuestion = Questions.getRandomQuestion;
+
+  {
+    choosen:       0,
+    difficulty:    randomQuestion.difficulty,
+    question:      randomQuestion.question,
+    choices:       List.mapi((i, value) => { text: value, number: i + 1 }, firstRandomQuestion.answers),
+    correctChoice: randomQuestion.correct,
+    hasChosen:     false
+  }
+
 };
 
 [@react.component]
@@ -41,22 +40,23 @@ let make = () => {
     React.useReducer(
       (state, action) =>
         switch action {
-          | Choose      => { ...state, hasChosen: true }
-          | SetQuestion => { ...state, hasChosen: false }
+          | ChooseAnswer(num) => { ...state, hasChosen: true, choosen: num }
+          | SetQuestion       => { ...resetState }
         },
-        initialState
+        resetState
     );
 
-  let makeChoice = (selectedNumber: int) => dispatch(Choose);
+  let makeChoice = (selectedNumber: int) => 
+    ChooseAnswer(selectedNumber) |> dispatch;
 
   let choiceComponents = List.map((a) =>
     <ChoiceButton 
-      key={string_of_int(a.number)}
+      key=string_of_int(a.number)
       choose=makeChoice 
-      num={a.number}
-      text={a.text}
+      num=a.number
+      text=a.text
       isRightChoice={a.number == state.correctChoice}
-      showResult={state.hasChosen}
+      showResult=state.hasChosen
     />,
     state.choices
   );
