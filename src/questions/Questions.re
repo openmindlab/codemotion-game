@@ -33,7 +33,7 @@ let decodedQuestions: array(questionsJson) =
   |> Json.parseOrRaise
   |> Decode.all;
 
-let getRandomQuestion =
+let getRandomQuestion = () =>
   decodedQuestions[
     decodedQuestions 
     |> Array.length 

@@ -16,17 +16,17 @@ and choice = {
 
 type action =
   | ChooseAnswer(int)
-  | SetQuestion;
+  | NewQuestion;
 
 let resetState = () => {
 
-  let randomQuestion = Questions.getRandomQuestion;
+  let randomQuestion = Questions.getRandomQuestion();
 
   {
     choosen:       0,
     difficulty:    randomQuestion.difficulty,
     question:      randomQuestion.question,
-    choices:       List.mapi((i, value) => { text: value, number: i + 1 }, firstRandomQuestion.answers),
+    choices:       List.mapi((i, value) => { text: value, number: i + 1 }, randomQuestion.answers),
     correctChoice: randomQuestion.correct,
     hasChosen:     false
   }
@@ -41,9 +41,9 @@ let make = () => {
       (state, action) =>
         switch action {
           | ChooseAnswer(num) => { ...state, hasChosen: true, choosen: num }
-          | SetQuestion       => { ...resetState }
+          | NewQuestion       => { ...resetState(), hasChosen: false }
         },
-        resetState
+        resetState()
     );
 
   let makeChoice = (selectedNumber: int) => 
@@ -67,6 +67,13 @@ let make = () => {
     <div className="choices-grid">
       (ReasonReact.array(Array.of_list(choiceComponents)))
     </div>
+
+    {
+      state.hasChosen 
+        ? <Button click={(_event) => dispatch(NewQuestion)} /> 
+        : ReasonReact.null
+    }
+
   </div>;
 
 };
