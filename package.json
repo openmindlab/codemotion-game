@@ -21,6 +21,7 @@
     "react-dom": "16.8.1",
     "reason-react": "0.7.0"
   },
+  "homepage": "https://openmindlab.github.io/codemotion-game",
   "devDependencies": {
     "json-loader": "^0.5.7",
     "bs-platform": "^5.0.6",

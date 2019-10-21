@@ -1,4 +1,0 @@
-Informazioni cronologiche,Question,Answer #1,Answer #2,Answer #3,Answer #4,Right Answer,Difficulty Level (higher is more difficult)
-20/10/2019 12.16.59,"In mathematics and computer science, what is a Monad? ",It's just a pretty name for flatMap,It's a monoid in the cathegory of endofunctors,A class with a lot of side-effects and hidden state,Monads is not related to mathematics and computer science,2,3
-20/10/2019 14.46.48,Which one of the following is a purely functional language?,Java,Ruby,LISP,Agda,3,2
-20/10/2019 14.48.35,What is the output of the following expression in JS? (() => ({}))();,undefined,An empty object,An empty array,null,2,1

@@ -1,4 +1,5 @@
 *.re linguist-detectable=true
+*.hs linguist-detectable=true
 *.html linguist-detectable=false
 *.styl linguist-detectable=false
 *.js linguist-detectable=false
