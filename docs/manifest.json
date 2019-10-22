@@ -3,6 +3,11 @@
   "name": "Openming Codemotion Quiz",
   "icons": [
     {
+      "src": "https://openmindlab.github.io/codemotion-game/imgs/icon@180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
       "src": "https://openmindlab.github.io/codemotion-game/imgs/icon@192.png",
       "type": "image/png",
       "sizes": "192x192"
