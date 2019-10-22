@@ -13,6 +13,16 @@
       "sizes": "192x192"
     },
     {
+      "src": "https://openmindlab.github.io/codemotion-game/imgs/icon@152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "https://openmindlab.github.io/codemotion-game/imgs/icon@167.png",
+      "type": "image/png",
+      "sizes": "167x167"
+    },
+    {
       "src": "https://openmindlab.github.io/codemotion-game/imgs/icon@512.png",
       "type": "image/png",
       "sizes": "512x512"
