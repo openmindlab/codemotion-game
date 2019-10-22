@@ -13,9 +13,10 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "/codemotion-game",
   "background_color": "#F5F5F5",
   "display": "standalone",
-  "scope": "/",
+  "orientation": "landscape",
+  "scope": "/codemotion-game",
   "theme_color": "#0F0F1D"
 }

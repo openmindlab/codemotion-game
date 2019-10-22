@@ -1,8 +1,5 @@
 <img src="./img/cover.png" />
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e845667c-c431-40d6-8604-e411c314aa36/deploy-status)](https://app.netlify.com/sites/openmind-codemotion-game/deploys)
-
-
 <br />
 
 The source code of the Codemotion stand quiz by openmind. <br />
