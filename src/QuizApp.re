@@ -36,8 +36,6 @@ let resetState = () => {
 [@react.component]
 let make = () => {
 
-  Js.log(string_of_int(Array.length(Questions.decodedQuestions)) ++ " total questions.");
-
   let (state, dispatch) =
     React.useReducer(
       (state, action) =>
