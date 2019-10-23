@@ -9,6 +9,7 @@
 *.bs.js
 build
 .merlin
+*.csv
 
 # User-specific stuff
 .idea/**/workspace.xml

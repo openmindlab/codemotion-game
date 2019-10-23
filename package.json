@@ -14,25 +14,26 @@
     "BuckleScript"
   ],
   "author": "Michele Riva <michele.riva@openmindonline.it>",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "dependencies": {
     "@glennsl/bs-json": "^5.0.1",
+    "csvtojson": "^2.0.10",
     "react": "16.8.1",
     "react-dom": "16.8.1",
     "reason-react": "0.7.0"
   },
   "homepage": "https://openmindlab.github.io/codemotion-game",
   "devDependencies": {
-    "json-loader": "^0.5.7",
     "bs-platform": "^5.0.6",
-    "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.0.1",
-    "webpack-cli": "^3.1.1",
-    "webpack-dev-server": "^3.1.8",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "json-loader": "^0.5.7",
     "style-loader": "^1.0.0",
     "stylus": "^0.54.7",
-    "stylus-loader": "^3.0.2"
+    "stylus-loader": "^3.0.2",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
   }
 }
