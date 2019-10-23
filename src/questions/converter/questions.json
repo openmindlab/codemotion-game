@@ -449,5 +449,324 @@
     ],
     "correct": 3,
     "difficulty": 1
+  },
+  {
+    "question": "How do you check the state of your local git repository since your last commit?",
+    "answers": [
+      "git status",
+      "git check",
+      "git commit",
+      "git diff"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "question": "How do you supply a commit message to a commit?",
+    "answers": [
+      "git message \"I'm coding\"",
+      "git add \"I'm coding\"",
+      "git commit \"I'm coding\"",
+      "git commit -m \"I'm coding\""
+    ],
+    "correct": 4,
+    "difficulty": 1
+  },
+  {
+    "question": "What does CSS stand for?",
+    "answers": [
+      "Creative Style Sheets",
+      "Colorful Style Sheets",
+      "Cascading Style Sheets",
+      "Computer Style Sheets"
+    ],
+    "correct": 3,
+    "difficulty": 1
+  },
+  {
+    "question": "How do you display hyperlinks without an underline?",
+    "answers": [
+      "a { text-decoration: no underline }",
+      "a { decoration: no underline }",
+      "a { text-decoration: none }",
+      "a { underline: none }"
+    ],
+    "correct": 3,
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following selector selects the elements that are checked?",
+    "answers": [
+      ":checked",
+      "::after",
+      "E ~ F",
+      "none of the mentioned"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following selector selects an element if it’s the only child of its parent?",
+    "answers": [
+      ":root",
+      ":nth-oftype(n)",
+      ":only-child",
+      ":child"
+    ],
+    "correct": 3,
+    "difficulty": 2
+  },
+  {
+    "question": "The combination of Red, Green and Blue values from?",
+    "answers": [
+      "0 to 255",
+      "0 to 254",
+      "0 to 256",
+      "0 to 253"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "question": "Multiple font faces are separated by?",
+    "answers": [
+      "Comma",
+      "Semicolon",
+      "Dot",
+      "Slash"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "question": "Inside which HTML element do we put the JavaScript?",
+    "answers": [
+      "<js>",
+      "<scripting>",
+      "<script>",
+      "<javascript>"
+    ],
+    "correct": 3,
+    "difficulty": 1
+  },
+  {
+    "question": "In JavaScript, a function with no return value is sometimes called",
+    "answers": [
+      "Procedures",
+      "Method",
+      "Static function",
+      "Dynamic function"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "question": "What does SQL stand for?",
+    "answers": [
+      "Structured query language",
+      "Structured query list",
+      "Simple query language",
+      "Sql query language"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "question": "Which one of the following is a NoSQL database?",
+    "answers": [
+      "MySQL",
+      "PostgresSQL",
+      "MariaDB",
+      "CouchDB"
+    ],
+    "correct": 4,
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the SQL statements is correct?",
+    "answers": [
+      "SELECT username AND password FROM Users",
+      "SELECT username, password FROM users",
+      "SELECT username, password WHERE username = 'user1'",
+      "SELECT username AND password WHERE username = 'user1'"
+    ],
+    "correct": 2,
+    "difficulty": 1
+  },
+  {
+    "question": "Which SQL keyword is used to retrieve only unique values?",
+    "answers": [
+      "DISTINCTIVE",
+      "UNIQUE",
+      "DISTINCT",
+      "DIFFERENT"
+    ],
+    "correct": 3,
+    "difficulty": 1
+  },
+  {
+    "question": "Which SQL statement is used to delete data FROM a database?",
+    "answers": [
+      "COLLAPSE",
+      "REMOVE",
+      "ALTER",
+      "DELETE"
+    ],
+    "correct": 4,
+    "difficulty": 1
+  },
+  {
+    "question": "Which command undo all the updates performed by the SQL in the transaction?",
+    "answers": [
+      "ROLLBACK",
+      "COMMIT",
+      "TRUNCATE",
+      "DELETE"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following SQL commands can be used to add data to a database table?",
+    "answers": [
+      "ADD",
+      "UPDATE",
+      "APPEND",
+      "INSERT"
+    ],
+    "correct": 4,
+    "difficulty": 1
+  },
+  {
+    "question": "What is an SQL virtual table that is constructed from other tables?",
+    "answers": [
+      "view",
+      "A relation",
+      "Just another table",
+      "Query results"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "question": "What SQL command can be used to delete columns from a table?",
+    "answers": [
+      "MODIFY TABLE TableName DROP ColumnName",
+      "MODIFY TABLE TableName DROP COLUMN ColumnName",
+      "ALTER TABLE TableName DROP ColumnName",
+      "ALTER TABLE TableName DROP COLUMN ColumnName"
+    ],
+    "correct": 4,
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following acronyms is part of the Java world?",
+    "answers": [
+      "JIT",
+      "GIT",
+      "JDK",
+      "JFK"
+    ],
+    "correct": 3,
+    "difficulty": 1
+  },
+  {
+    "question": "What does JDK mean?",
+    "answers": [
+      "John David Kennedy",
+      "Java Development Kit",
+      "Java Deploy Kit",
+      "Java Delay Kit"
+    ],
+    "correct": 2,
+    "difficulty": 1
+  },
+  {
+    "question": "In Java byte, short, int and long are all",
+    "answers": [
+      "Signed",
+      "Unsigned",
+      "Both of the above",
+      "None of these"
+    ],
+    "correct": 1,
+    "difficulty": 2
+  },
+  {
+    "question": "Size of int in Java is",
+    "answers": [
+      "16 bit",
+      "32 bit",
+      "64 bit",
+      "Depends on the execution environment"
+    ],
+    "correct": 2,
+    "difficulty": 2
+  },
+  {
+    "question": "What shell command is used to count the total number of lines, words, and characters contained in a file?",
+    "answers": [
+      "countw",
+      "wc",
+      "wcount",
+      "countlns"
+    ],
+    "correct": 2,
+    "difficulty": 2
+  },
+  {
+    "question": "How do you exit vim?",
+    "answers": [
+      ":halt",
+      ":exit",
+      ":q",
+      "You can't exit from vim"
+    ],
+    "correct": 3,
+    "difficulty": 3
+  },
+  {
+    "question": "Which of the following is not a Linux text editor?",
+    "answers": [
+      "pico",
+      "vim",
+      "nano",
+      "notepad++"
+    ],
+    "correct": 4,
+    "difficulty": 1
+  },
+  {
+    "question": "What is Docker?",
+    "answers": [
+      "A set of platform-as-a-service (PaaS) products that use OS-level virtualization to deliver software in packages called containers.",
+      "An amazing whale that lives in the pacific ocean",
+      "A Windows virtual machine",
+      "A JVM emulator"
+    ],
+    "correct": 1,
+    "difficulty": 1
+  },
+  {
+    "question": "Which of the following is not an attribute used with SVG ellipse? (CSS)",
+    "answers": [
+      "cx",
+      "cy",
+      "rr",
+      "ry"
+    ],
+    "correct": 3,
+    "difficulty": 2
+  },
+  {
+    "question": "Which of the following CSS property is used to define which properties a transition will be applied to?",
+    "answers": [
+      "animation-property",
+      "transition-property",
+      "css3-property",
+      "none of the mentioned"
+    ],
+    "correct": 2,
+    "difficulty": 1
   }
 ]
